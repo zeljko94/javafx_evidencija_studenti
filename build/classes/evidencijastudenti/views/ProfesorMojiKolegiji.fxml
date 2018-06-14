@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1046.0" styleClass="mainFxmlClass" stylesheets="@profesormojikolegiji.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencijastudenti.controllers.ProfesorMojiKolegijiController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="181.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="511.0" minHeight="10.0" prefHeight="511.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label prefHeight="77.0" prefWidth="1046.0" text="Moji kolegiji" GridPane.columnSpan="2">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblMojiKolegiji" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+        <columns>
+          <TableColumn fx:id="tblColNaziv" prefWidth="1042.0" text="Naziv kolegija" />
+        </columns>
+      </TableView>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="btnPregledDetalja" mnemonicParsing="false" onAction="#btnPregledDetaljaOnClick" text="Pregled sudionika">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnIzmjeni" mnemonicParsing="false" onAction="#btnIzmjeniOnClick" text="Izmjeni">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnBrisi" mnemonicParsing="false" onAction="#btnBrisiOnClick" text="Briši">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnDodaj" mnemonicParsing="false" onAction="#btnDodajOnClick" text="Dodaj">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnNazad" mnemonicParsing="false" onAction="#btnNazadOnClick" text="Nazad na početnu">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

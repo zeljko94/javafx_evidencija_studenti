@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="805.0" prefWidth="1094.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencijastudenti.controllers.AdminDashboardController">
+    <stylesheets>
+        <URL value="@admindashboard.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="btnProfileSettings" fitHeight="218.0" fitWidth="218.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnProfileSettingsOnClick" onMouseEntered="#btnPostavkeProfilaOnMouseEnter" onMouseExited="#btnPostavkeProfilaOnMouseLeave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/gear.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnPregledProfesora" fitHeight="267.0" fitWidth="257.0" layoutX="55.0" layoutY="524.0" onMouseClicked="#btnPregledProfesoraOnClick" onMouseEntered="#btnPregledProfesoraOnMouseEnter" onMouseExited="#btnPregledProfesoraOnMouseLeave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/6714941781530088140.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnPregledStudenata" fitHeight="275.0" fitWidth="267.0" layoutX="404.0" layoutY="334.0" onMouseClicked="#btnPregledStudenataOnClick" onMouseEntered="#btnPregledStudenataOnMouseEnter" onMouseExited="#btnPregledStudenataOnMouseLeave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/students.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnPregledKolegija" fitHeight="267.0" fitWidth="257.0" layoutX="761.0" layoutY="524.0" onMouseClicked="#btnPregledKolegijaOnClick" onMouseEntered="#btnPregledKolegijaOnMouseEnter" onMouseExited="#btnPregledKolegijaOnMouseLeave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/Literature-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnLogout" fitHeight="172.0" fitWidth="148.0" layoutX="938.0" layoutY="27.0" onMouseClicked="#btnLogoutOnClick" onMouseEntered="#btnLogoutOnMouseEnter" onMouseExited="#btnLogoutOnMouseLeave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/red-logout-512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="308.0" layoutY="69.0" styleClass="naslov" stylesheets="@admindashboard.css" text="Profesor početna" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="683.0" styleClass="background" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencijastudenti.controllers.LoginController">
+   <children>
+      <GridPane layoutX="11.0" prefHeight="330.0" prefWidth="658.0">
+         <children>
+            <TextField fx:id="txtUsername" prefHeight="39.0" prefWidth="394.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="txtPassword" prefHeight="39.0" prefWidth="394.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="lblErrorMessage" prefHeight="21.0" prefWidth="685.0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btnLogin_onClick" text="Login" GridPane.rowIndex="4" />
+            <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#btnRegister_onClick" text="Registracija" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="lbl" text="Korisničko ime:" GridPane.rowIndex="1" />
+            <Label styleClass="lbl" text="Lozinka:" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="10.0" prefWidth="149.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="568.0" minWidth="10.0" prefWidth="520.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="251.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="251.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

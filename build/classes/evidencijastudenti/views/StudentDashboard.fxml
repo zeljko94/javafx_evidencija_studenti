@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencijastudenti.controllers.StudentDashboardController">
+    <stylesheets>
+        <URL value="@studentdashboard.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="219.0" layoutY="52.0" text="Student dashboard" textOverrun="CLIP">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnPostavkeProfila" fitHeight="172.0" fitWidth="148.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnPostavkeProfilaOnClick" onMouseEntered="#btnPostavkeProfilaOnMouseEnter" onMouseExited="#btnPostavkeProfilaOnMouseLeave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/gear.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnLogout" fitHeight="172.0" fitWidth="148.0" layoutX="558.0" layoutY="34.0" onMouseClicked="#btnLogoutOnClick" onMouseEntered="#btnLogoutOnMouseEnter" onMouseExited="#btnLogoutOnMouseLeave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/red-logout-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnPregledOcjena" fitHeight="218.0" fitWidth="226.0" layoutX="403.0" layoutY="244.0" onMouseClicked="#btnPregledOcjenaOnClick" onMouseEntered="#btnPregledOcjenaOnMouseEnter" onMouseExited="#btnPregledOcjenaOnMouseLeave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/result-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnMojiKolegiji" fitHeight="193.0" fitWidth="176.0" layoutX="136.0" layoutY="244.0" onMouseClicked="#btnMojiKolegijiOnClick" onMouseEntered="#btnMojiKolegijiOnMouseEnter" onMouseExited="#btnMojiKolegijiOnMouseLeave" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/Literature-512.png" />
+         </image>
+      </ImageView>
+   </children>
+   <styleClass>
+      <String fx:value="mainFxmlClass" />
+      <String fx:value="background" />
+   </styleClass>
+</AnchorPane>

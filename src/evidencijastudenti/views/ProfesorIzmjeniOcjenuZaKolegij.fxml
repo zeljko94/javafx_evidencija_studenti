@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="957.0" styleClass="mainFxmlClass" stylesheets="@profesorizmjeniocjenuzakolegij.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencijastudenti.controllers.ProfesorIzmjeniOcjenuZaKolegijController">
+   <children>
+      <Label prefHeight="21.0" prefWidth="1152.0" text="Izmjeni ocjenu" GridPane.columnSpan="3">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudent" prefHeight="46.0" prefWidth="957.0" text="Student:" GridPane.columnSpan="3" GridPane.rowIndex="1">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblKolegij" prefHeight="46.0" prefWidth="955.0" text="Kolegij:" GridPane.columnSpan="3" GridPane.rowIndex="2">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblKolegij1" prefHeight="46.0" prefWidth="955.0" text="Ocjena:" GridPane.rowIndex="4">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbOcjena" prefHeight="31.0" prefWidth="69.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label fx:id="lblKolegij11" prefHeight="46.0" prefWidth="955.0" text="Opis:" GridPane.rowIndex="5">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblKolegij111" prefHeight="46.0" prefWidth="955.0" text="Datum:" GridPane.rowIndex="6">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOpis" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <DatePicker fx:id="datum" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="7">
+         <children>
+            <Button fx:id="btnDodaj" mnemonicParsing="false" onAction="#btnDodajOnClick" text="Izmjeni">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnReset" mnemonicParsing="false" onAction="#btnResetOnClick" text="Reset">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnNazad" mnemonicParsing="false" onAction="#btnNazadOnClick" text="Nazad">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="lblErrors" prefHeight="21.0" prefWidth="1077.0" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="106.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="814.0" minWidth="10.0" prefWidth="814.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="9.0" prefWidth="9.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="210.0" minHeight="0.0" prefHeight="69.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="497.0" minHeight="0.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="497.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="497.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="497.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="497.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="497.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="497.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="497.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+</GridPane>

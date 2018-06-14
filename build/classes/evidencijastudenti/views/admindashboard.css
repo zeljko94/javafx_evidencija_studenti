@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #ADD8E6;
+}
+
+
+.naslov{
+    -fx-font-size: 60px;
+    -fx-font-weight: bold;
+    -fx-text-inner-color: red;
+}

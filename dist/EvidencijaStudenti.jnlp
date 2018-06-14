@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="EvidencijaStudenti.jnlp">
+  <information>
+    <title>EvidencijaStudenti</title>
+    <vendor>owner</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="EvidencijaStudenti.jar" size="371237" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.38-bin.jar" size="983914" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="EvidencijaStudenti" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="evidencijastudenti.EvidencijaStudenti"  name="EvidencijaStudenti" />
+  <update check="always"/>
+</jnlp>

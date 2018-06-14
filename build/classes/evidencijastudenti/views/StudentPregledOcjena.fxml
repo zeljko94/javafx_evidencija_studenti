@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="854.0" prefWidth="1190.0" styleClass="mainFxmlClass" stylesheets="@studentpregledocjena.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencijastudenti.controllers.StudentPregledOcjenaController">
+   <children>
+      <Label prefHeight="66.0" prefWidth="1197.0" text="Pregled ocjena" GridPane.columnSpan="3">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label text="Kolegij:" GridPane.rowIndex="1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbKolegij" prefHeight="31.0" prefWidth="218.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TableView fx:id="tblOcjene" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="2">
+         <columns>
+            <TableColumn fx:id="tblColOcjena" prefWidth="75.0" text="Ocjena" />
+            <TableColumn fx:id="tblColOpis" prefWidth="415.0" text="Opis" />
+            <TableColumn fx:id="tblColDatum" prefWidth="185.0" text="Datum" />
+            <TableColumn fx:id="tblColStudent" prefWidth="295.0" text="Student" />
+            <TableColumn fx:id="tblColKolegij" prefWidth="216.0" text="Kolegij" />
+         </columns>
+      </TableView>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="btnNazad" mnemonicParsing="false" onAction="#btnNazadOnClick" text="Nazad">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="363.0" minWidth="10.0" prefWidth="121.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1023.0" minWidth="10.0" prefWidth="1023.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="190.0" minHeight="0.0" prefHeight="58.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="436.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="711.0" minHeight="10.0" prefHeight="705.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="485.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+</GridPane>
