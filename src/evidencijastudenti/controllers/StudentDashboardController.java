@@ -69,13 +69,6 @@ public class StudentDashboardController implements Initializable {
         evidencijastudenti.EvidencijaStudenti.GlowOff(btnLogout);
     }
     
-    
-    
-    
-    
-    
-    
-    
     public void btnPostavkeProfilaOnClick(){
         evidencijastudenti.EvidencijaStudenti.openWindow("Postavke profila", btnLogout.getParent(), "StudentPostavkeProfila");
     }
